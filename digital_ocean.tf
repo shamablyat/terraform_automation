@@ -12,9 +12,9 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_droplet" "web" {
-  image    = "ubuntu-18-04-x64"
-  name     = "web-1"
-  region   = "nyc3"
+  image    = var.os-type
+  name     = var.server-name
+  region   = "fra1"
   size     = "s-1vcpu-1gb"
   ssh_keys = [ digitalocean_ssh_key.ssh-key.id ]
 }
