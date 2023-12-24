@@ -1,5 +1,4 @@
-before terraform apply u would az loggin --use-device-code
-
+before terraform apply u would run "az loggin --use-device-code"
 
 terraform init
 
